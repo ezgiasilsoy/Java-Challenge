@@ -55,7 +55,7 @@ public class BorrowManager {
         return false;
     }
 
-    // Hata Giderildi: Kapsülleme sağlandı (library.activeLoans yerine public metot kullanıldı)
+
     private Loan findActiveLoan(User user, Books book) {
         List<Loan> loans = library.getActiveLoans(); // Public metot ile erişim
 

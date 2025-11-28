@@ -6,7 +6,6 @@ import com.ezgiasilsoy.librarysystem.models.Loan;
 import com.ezgiasilsoy.librarysystem.models.User;
 import com.ezgiasilsoy.librarysystem.models.Books;
 
-// IFinanceService'i uygulayarak Polymorphism'i sağlar
 public class FinanceServiceImpl implements IFinanceService {
 
     private static final double LOAN_FEE = 5.00;
@@ -26,7 +25,6 @@ public class FinanceServiceImpl implements IFinanceService {
     public boolean processRefund(Loan loan, User user) {
         double refundAmount = LOAN_FEE;
 
-        // Gecikme hesaplaması ve ceza mantığı buraya eklenebilir.
 
         System.out.printf("-> İADE İŞLEMİ: Kullanıcı %s için %.2f TL iade/ceza kontrolü yapıldı.\n",
                 user.getName(), refundAmount);
